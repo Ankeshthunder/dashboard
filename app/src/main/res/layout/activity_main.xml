@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/plant1">
+
+                <ImageView android:layout_width="125dp"
+                           android:layout_height="90dp"
+                           android:src="@drawable/acet"
+                           android:layout_gravity="center"/>
+                <TextView android:layout_width="200dp"
+                          android:layout_height="wrap_content"
+                          android:text="ACET DASHBOARD"
+                          android:textColor="@color/colorPrimary"
+                          android:gravity="center"
+                          android:textStyle="bold"
+                          android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginTop="230dp"
+                          android:layout_marginRight="10dp"
+                          android:layout_marginLeft="10dp">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                >
+                    <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            <ImageView
+                                    android:layout_width="90dp"
+                                    android:id="@+id/tech"
+                                    android:layout_height="90dp"
+                                    android:src="@drawable/btech"
+                                    android:layout_centerInParent="true"/>
+                            <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+                                    android:layout_below="@+id/tech"
+                                    android:text="B.TECH"
+                                    android:textSize="25dp"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                            />
+                            <Button android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:id="@+id/btech"
+                                    android:onClick="tech"/>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            <ImageView
+                                    android:layout_width="90dp"
+                                    android:id="@+id/phar"
+                                    android:layout_height="70dp"
+                                    android:src="@drawable/phar"
+                                    android:layout_centerInParent="true"/>
+                            <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+                                    android:layout_below="@+id/phar"
+                                    android:text="PHARMACY"
+                                    android:textSize="25dp"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="10dp"
+                            />
+                            <Button android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:id="@+id/pharma"
+                            android:onClick="phar"/>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="20dp"
+                >
+                    <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:orientation="vertical">
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            <ImageView
+                                    android:layout_width="90dp"
+                                    android:id="@+id/hmt"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/hmct"
+                                    android:layout_centerInParent="true"/>
+                            <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="30dp"
+                                    android:layout_below="@+id/hmt"
+                                    android:text="HMCT"
+                                    android:textSize="25dp"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                            />
+                            <Button android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:id="@+id/hmct"
+                            android:onClick="hmt"/>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            <ImageView
+                                    android:layout_width="90dp"
+                                    android:id="@+id/agr"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/agri"
+                                    android:layout_centerInParent="true"/>
+                            <TextView
+                                    android:layout_width="170dp"
+                                    android:layout_height="30dp"
+                                    android:layout_below="@+id/agr"
+                                    android:text="AGRICULTURE"
+                                    android:textSize="25dp"
+                                    android:gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="10dp"
+                            />
+                            <Button android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:id="@+id/agri"
+                            android:onClick="agr"/>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
